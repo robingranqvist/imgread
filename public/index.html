@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Granqvist - Imgread</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-inner-wrapper">
+            <div class="content">
+                <div class="brand">
+                    <img src="assets/readme.svg"/>
+                </div>
+
+                <p class="top-title">
+                    IMGREAD
+                </p>
+                <h1>Welcome to imgread, Robin's little image transcription web app.</h1>
+                <p class="subtitle">
+                    Simply enter (or upload soon) an image URL in the input box down below, 
+                    hit transcribe, and <a href="https://tesseract.projectnaptha.com/" target="_blank">tesseract.js</a> will do its magic.
+                </p>
+
+                <!-- IMG -->
+                <div class="loading">
+                    <div class="loader"></div>
+                </div>
+
+                <div class="processed-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia accusantium ex perferendis deserunt minus accusamus tenetur illum corrupti at itaque eos sunt dolores quidem, veritatis asperiores consequatur dolore, beatae quisquam nesciunt labore quos. Voluptas quae quibusdam omnis animi fugiat, voluptatem culpa exercitationem libero necessitatibus quos tempore ad totam accusamus!
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-inner-container">
+                    <input type="text" id="imgurl" class="input is-medium">
+                    <button class="button">Transcribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
