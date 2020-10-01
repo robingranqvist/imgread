@@ -192,3 +192,9 @@ button {
     transform: rotate(360deg);
   }
 }
+
+.another {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}

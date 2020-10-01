@@ -16,9 +16,7 @@ const lang = 'swe';
 
 app.post('/api/transcribe', (req, res) => {
     Tesseract.recognize(req.body.url, 'swe', 
-        { 
-            logger: m => console.log(m.progress) 
-        }
+        { logger: m => console.log(m.progress) }
     ).then(({ data: { text } }) => {
         res.json(text);
     }).catch((err) => {

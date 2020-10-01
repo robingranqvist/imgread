@@ -4,6 +4,7 @@ let processed = document.querySelector('.processed-content');
 let loadingDiv = document.querySelector('.loading');
 
 let formContainer = document.querySelector('.form-container');
+let another = document.querySelector('.another');
 
 
 btn.addEventListener('click', () => {
@@ -35,6 +36,7 @@ function setupProcessedScreen (data) {
     processed.style.display = 'block';
     processed.innerHTML = data;
     showLoading(false);
+    another.style.display = 'block';
 }
 
 function showLoading(show) {
