@@ -5,6 +5,7 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const Tesseract = require('tesseract.js');
+require('dotenv').config();
 
 app.use(cors());
 
