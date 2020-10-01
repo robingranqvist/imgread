@@ -6,10 +6,8 @@ let loadingDiv = document.querySelector('.loading');
 let formContainer = document.querySelector('.form-container');
 let another = document.querySelector('.another');
 
-
 btn.addEventListener('click', () => {
-    getTranscription();
-    hideForm();
+    if (imgUrl.value) { getTranscription(); hideForm(); } else {  }
 });
 
 // Get the transcription
