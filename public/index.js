@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
 
 // Get the transcription
 async function getTranscription() {
-    await fetch('http://localhost:3000/', {
+    await fetch('api/transcribe', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

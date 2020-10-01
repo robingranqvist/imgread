@@ -14,7 +14,7 @@ app.use("/", express.static(__dirname + '/public'));
 const url = 'https://i2.wp.com/www.enligto.se/wp-content/uploads/2013/03/Sk%C3%A4rmavbild-2013-03-01-kl.-21.44.21.png?resize=738%2C380';
 const lang = 'swe';
 
-app.post('/', (req, res) => {
+app.post('/api/transcribe', (req, res) => {
     Tesseract.recognize(req.body.url, 'swe', 
         { 
             logger: m => console.log(m.progress) 
